@@ -1,0 +1,32 @@
+<!DOCTYPE HTML>
+<head>
+<meta charset="UTF-8">
+</head>
+<body>
+    <script type="text/javascript">
+        function ks() {
+            var myArray = new Array('You Win!', 'You Lose.');    
+            var input = prompt('Rock, Scissor, Paper!');
+            switch(input) {
+                case 'rock':
+                alert(randomItem(myArray), '<br />');
+                break;
+                case 'scissor':
+                alert(randomItem(myArray), '<br />');
+                break;
+                case 'paper':
+                alert(randomItem(myArray), '<br />');
+                break;
+            }
+            if ( input === 'rock' || input === 'scissor' || input === 'paper' ) {
+            } else {
+                alert('error', '<br />');
+            }
+        }
+        ks();
+        function randomItem(random) {
+         return random[Math.floor(Math.random() * random.length)];
+        }
+    </script>
+</body>
+</html>
